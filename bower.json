@@ -5,7 +5,8 @@
     "bootstrap": "~3.1.1",
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0",
-    "mithril": "~0.1.16"
+    "mithril": "~0.1.16",
+    "lodash": "~2.4.1"
   },
   "devDependencies": {}
 }
