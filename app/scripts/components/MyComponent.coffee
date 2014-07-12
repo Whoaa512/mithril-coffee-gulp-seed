@@ -7,7 +7,7 @@ module.exports = class MyComponent
 
   constructor: ->
     model_ref = @
-    @exposedData = m.prop ['To', 'be' 'updated', 'later']
+    @exposedData = m.prop ['To', 'be', 'updated', 'later']
 
 
   controller: class
