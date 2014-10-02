@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "lodash": "2.4.1",
-    "mithril": "^0.1.22"
+    "mithril": "0.1.22"
   },
   "devDependencies": {
     "browserify": "^4.2.0",
