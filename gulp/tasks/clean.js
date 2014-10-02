@@ -1,8 +1,6 @@
 var gulp = require('gulp');
-var clean = require('gulp-clean');
+var run = require('gulp-run');
 
-gulp.task('clean', function() {
-  return gulp.src(['.tmp', 'dist'], {
-    read: false
-  }).pipe(clean());
+gulp.task('clean', function(cb) {
+  run('rm -rf dist .tmp').exec(cb);
 });
