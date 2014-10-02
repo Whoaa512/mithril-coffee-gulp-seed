@@ -9,11 +9,9 @@
   },
   "browser": {
     "jquery": "./app/bower_components/jquery/dist/jquery.js",
-    "lodash": "./app/bower_components/lodash/dist/lodash.compat.js"
   },
   "browserify-shim": {
     "jquery": "$",
-    "lodash": "_",
     "./app/bower_components/bootstrap/dist/js/bootstrap.js": {
       "depends": [
         "./app/bower_components/jquery/dist/jquery.js:$"
@@ -21,6 +19,7 @@
     }
   },
   "dependencies": {
+    "lodash": "2.4.1",
     "mithril": "^0.1.22"
   },
   "devDependencies": {
