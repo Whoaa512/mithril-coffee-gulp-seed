@@ -9,7 +9,7 @@ gulp.task('styles', function () {
   return gulp.src('app/styles/main.less')
     // .pipe(sourcemaps.init())
     .pipe(less({
-      paths: ['app/styles/includes']
+      paths: ['app/styles/includes', 'app/bower_components/bootstrap/less']
     }))
     // .pipe(sourcemaps.write())
     .pipe(autoprefixer('last 1 version'))
