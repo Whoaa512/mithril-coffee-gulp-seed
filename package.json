@@ -9,11 +9,9 @@
   },
   "browser": {
     "jquery": "./app/bower_components/jquery/dist/jquery.js",
-    "mithril": "./app/bower_components/mithril/mithril.js",
     "lodash": "./app/bower_components/lodash/dist/lodash.compat.js"
   },
   "browserify-shim": {
-    "mithril": "m",
     "jquery": "$",
     "lodash": "_",
     "./app/bower_components/bootstrap/dist/js/bootstrap.js": {
@@ -22,7 +20,9 @@
       ]
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "mithril": "^0.1.22"
+  },
   "devDependencies": {
     "browserify": "^4.2.0",
     "browserify-shim": "^3.6.0",
