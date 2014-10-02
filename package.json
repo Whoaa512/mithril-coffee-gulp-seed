@@ -4,7 +4,7 @@
   "browserify": {
     "transform": [
       "browserify-shim",
-      "coffeeify"
+      "caching-coffeeify"
     ]
   },
   "browser": {
@@ -26,7 +26,7 @@
   "devDependencies": {
     "browserify": "^4.2.0",
     "browserify-shim": "^3.6.0",
-    "coffeeify": "^0.6.0",
+    "caching-coffeeify": "0.4.0",
     "connect": "^2.14.4",
     "connect-livereload": "^0.4.0",
     "gulp": "^3.6.0",
