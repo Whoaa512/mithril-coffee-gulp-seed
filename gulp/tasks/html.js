@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var filter = require('gulp-filter');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
@@ -17,8 +18,8 @@ gulp.task('html', ['styles', 'browserify'], function() {
     .pipe(cssFilter)
     .pipe(csso())
     .pipe(cssFilter.restore())
-    .pipe(useref.restore())
+    .pipe(useref.assets().restore())
     .pipe(useref())
     .pipe(gulp.dest('dist'))
-    .pipe(size());
+    .pipe(size())
 });
