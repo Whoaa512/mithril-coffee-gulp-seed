@@ -16,9 +16,9 @@ var source       = require('vinyl-source-stream');
 
 gulp.task('browserify', function() {
 
-  var bundleMethod = global.isWatching ? watchify : browserify;
-
-  var bundler = bundleMethod({
+  var bundler = browserify({
+    // Required watchify args
+    cache: {}, packageCache: {}, fullPaths: true,
     // Specify the entry point of your app
     entries: ['./app/scripts/main.coffee'],
     // Add file extentions to make optional in your requires
@@ -46,6 +46,7 @@ gulp.task('browserify', function() {
   };
 
   if(global.isWatching) {
+    bundler = watchify(bundler)
     // Rebundle with watchify on changes.
     bundler.on('update', bundle);
   }
