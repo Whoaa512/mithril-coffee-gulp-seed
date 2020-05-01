@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "lodash": "4.17.15",
-    "mithril": "0.1.22"
+    "mithril": "0.1.22",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "browserify": "^5.12.1",
@@ -57,5 +58,10 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
