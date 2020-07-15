@@ -19,7 +19,7 @@
     }
   },
   "dependencies": {
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "mithril": "0.1.22"
   },
   "devDependencies": {
